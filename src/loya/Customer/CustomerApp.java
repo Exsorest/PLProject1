@@ -15,6 +15,7 @@ public class CustomerApp {
 
             System.out.print("Enter a customer number: ");
             customerNumber = sc.nextLine();
+            System.out.println();
             int number = Integer.parseInt(customerNumber);
 
             Customer customer = CustomerDB.getCustomer(number);
@@ -31,9 +32,10 @@ public class CustomerApp {
 
             else{
 
-                System.out.println("There is no customer number " + number + " in our records.");
-                System.out.println("Display another customer? (y/n): ");
+                System.out.println("There is no customer number " + number + " in our records.\n");
+                System.out.print("Display another customer? (y/n): ");
                 continueLoop = sc.nextLine();
+                System.out.println();
             }
 
         }
