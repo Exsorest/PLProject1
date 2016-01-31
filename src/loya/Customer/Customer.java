@@ -63,7 +63,7 @@ public class Customer {
 
     public String getNameAndAddress(){
 
-        String nameAndAddress = "" + name +"\n" + address + "\n" + address + ", " + state + " " + postalCode;
+        String nameAndAddress = "" + name +"\n" + address + "\n" + city + ", " + state + " " + postalCode;
         return nameAndAddress;
 
     }
